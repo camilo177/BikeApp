@@ -18,11 +18,11 @@
                 <div id="carouselId" class="carousel slide position-relative" data-bs-ride="carousel">
                     <div class="carousel-inner" role="listbox">
                         <div class="carousel-item active rounded">
-                            <img src="{% static 'img/bike-hero-1.png' %}" class="img-fluid w-100 h-100 bg-secondary rounded" alt="First slide">
+                            <img src="https://granjaalma.blob.core.windows.net/contenedor/mtb2.jpeg" class="img-fluid w-100 h-100 bg-secondary rounded" alt="First slide">
                             <a href="#" class="btn px-4 py-2 text-white rounded">Mountain Bikes</a>
                         </div>
                         <div class="carousel-item rounded">
-                            <img src="{% static 'img/bike-hero-2.jpg' %}" class="img-fluid w-100 h-100 rounded" alt="Second slide">
+                            <img src="https://granjaalma.blob.core.windows.net/contenedor/full_2023_3955_aeroad-cf-slx-8-disc-di2_P08_P5.jpg" class="img-fluid w-100 h-100 rounded" alt="Second slide">
                             <a href="#" class="btn px-4 py-2 text-white rounded">Road Bikes</a>
                         </div>
                     </div>
@@ -41,7 +41,7 @@
 </div>
 <!-- Hero End -->
 
-<!-- Bikes Shop Start-->
+<!-- Bikes Shop Start -->
 <div class="container-fluid bikes py-5">
     <div class="container py-5">
         <div class="tab-class text-center">
@@ -71,12 +71,12 @@
                     <div class="row g-4">
                         <div class="col-lg-12">
                             <div class="row g-4">
-
                                 {% for product in products %}
                                     <div class="col-md-6 col-lg-4 col-xl-3">
                                         <div class="rounded position-relative bike-item">
                                             <div class="bike-img">
-                                                <img src="{{ product.image.url }}" class="img-fluid w-100 rounded-top" alt="{{ product.name }}">
+                                                <!-- Upload a high-resolution image of the bike showcasing its features -->
+                                                <img src="https://granjaalma.blob.core.windows.net/contenedor/mtb2.jpeg" class="img-fluid w-100 rounded-top" alt="{{ product.name }}">
                                             </div>
                                             <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">{{ product.category }}</div>
                                             <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -90,7 +90,6 @@
                                         </div>
                                     </div>
                                 {% endfor %}
-                                
                             </div>
                         </div>
                     </div>
@@ -105,7 +104,8 @@
                                     <div class="col-md-6 col-lg-4 col-xl-3">
                                         <div class="rounded position-relative bike-item">
                                             <div class="bike-img">
-                                                <img src="{{ product.image.url }}" class="img-fluid w-100 rounded-top" alt="{{ product.name }}">
+                                                <!-- Upload a high-resolution image of the bike showcasing its features -->
+                                                <img src="https://granjaalma.blob.core.windows.net/contenedor/full_2023_3955_aeroad-cf-slx-8-disc-di2_P08_P5.jpg" class="img-fluid w-100 rounded-top" alt="{{ product.name }}">
                                             </div>
                                             <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">{{ category.name }}</div>
                                             <div class="p-4 border border-secondary border-top-0 rounded-bottom">
@@ -124,11 +124,10 @@
                     </div>
                 </div>
                 {% endfor %}
-                
             </div>
-        </div>      
+        </div>
     </div>
 </div>
-<!-- Bikes Shop End-->
+<!-- Bikes Shop End -->
 
 {% endblock content %}

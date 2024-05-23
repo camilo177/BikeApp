@@ -25,7 +25,7 @@ SECRET_KEY = 'D@n1El3nL4C0P3$$'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'granja123.azurewebsites.net']
 
 
 # Application definition
